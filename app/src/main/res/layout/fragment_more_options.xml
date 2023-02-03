@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.MoreOptionsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:textStyle="bold"
+            android:textColor="@color/head_text"
+            android:id="@+id/newStatusNotification"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications On New Status Available"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:textColor="@color/head_text"
+            android:textStyle="bold"
+
+            android:id="@+id/darkMode"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark Theme (off)"/>
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/head_text"
+            android:textStyle="bold"
+
+            android:layout_weight="3"
+            android:id="@+id/WhatsAppWeb"
+            android:padding="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WhatsApp Web AND Message Recovery"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/weblogo"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/clearCache_box"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/head_text"
+                android:textStyle="bold"
+
+                android:layout_weight="3"
+                android:id="@+id/clearCache"
+                android:padding="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Clear temporary app cache (not recomended)"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/clean"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle">
+
+        <LinearLayout
+            android:id="@+id/howtoUse_box"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/head_text"
+                android:textStyle="bold"
+
+                android:layout_weight="3"
+                android:id="@+id/howto"
+                android:padding="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Howto Use App / Save Statuses"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/help"/>
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/head_text"
+            android:textStyle="bold"
+
+            android:id="@+id/Contact"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us / Write Suggestion \n Get your App/Website made withus"/>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/like"
+                android:textStyle="bold"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Like Our App? "
+                android:textColor="@color/head_text" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:src="@drawable/clean"/>
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/like"
+                android:layout_marginLeft="20dp"
+                android:text="Share" />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/like"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/share"
+                android:text="Rate" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

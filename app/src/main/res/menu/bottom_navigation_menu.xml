@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item_1"
+        android:icon="@drawable/whatsapp_vector"
+        android:title="WhatsApp" />
+    <item
+        android:id="@+id/nav_item_2"
+        android:icon="@drawable/wa_business_vector"
+        android:title="WA Business" />
+    <item
+        android:id="@+id/nav_item_3"
+        android:icon="@drawable/send_button"
+        android:title="Direct Chat" />
+
+    <item
+        android:id="@+id/nav_item_4"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="More" />
+</menu>

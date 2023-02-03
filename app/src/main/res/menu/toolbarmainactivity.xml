@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Share App"
+        android:id="@+id/stateOfApp"
+        android:icon="@drawable/whatsapp_vector"
+        app:showAsAction="always"/>
+
+
+
+    <item android:title="Share App"
+        android:id="@+id/shareApp"
+        android:icon="@drawable/share"
+        app:showAsAction="never"/>
+
+    <item android:title="Howto Use App"
+        android:id="@+id/howToUse"
+        android:icon="@drawable/help"
+
+        app:showAsAction="never"/>
+
+    <item android:title="Rate This App "
+        android:id="@+id/rateApp"
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        app:showAsAction="never"/>
+
+    <item android:title="About App"
+        android:id="@+id/aboutApp"
+        android:icon="@drawable/ic_baseline_info_24"
+        app:showAsAction="never"/>
+</menu>

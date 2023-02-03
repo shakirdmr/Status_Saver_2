@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Fragments.DirectChatFragment">
+
+    <LinearLayout
+        android:id="@+id/directMessageBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Direct Chat"
+            android:textColor="@color/head_text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Send message to any number on WhatsApp without saving. \n\nYou can even send message to yourself."
+            android:textColor="@color/head_text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+
+            android:weightSum="3">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:ccpDialog_textColor="@color/head_text"
+                app:ccp_arrowColor="@color/head_text"
+                app:ccp_contentColor="@color/head_text"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="true" />
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="phone number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:textColor="@color/head_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/whatsAppSend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:elevation="20dp"
+                android:padding="15dp"
+                android:text="WhatsApp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/waBusinessSend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="WA Business"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

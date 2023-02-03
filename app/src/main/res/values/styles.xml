@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="ActiveIndicatorStyle">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:ignore="ObsoleteSdkInt" tools:targetApi="l">
+            @color/white
+        </item>
+    </style>
+
+
+</resources>
